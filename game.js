@@ -58,6 +58,6 @@ function game() {
     if (playerScore >= computerScore) {
         return "Winner Winner! Chicken dinner!"
     } else {
-        return "The computer must be hacking. Git gud!"
+        return "Computer wins. Better luck next time!"
     }
 };
