@@ -9,31 +9,31 @@
 
 //     Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
 
-const container = document.querySelector('#container');
+// const container = document.querySelector('#container');
 
-const newPara = document.createElement('p');
-    newPara.style.color = 'red';
-    newPara.textContent = 'Hey I\'m red!'
-    container.appendChild(newPara);
+// const newPara = document.createElement('p');
+//     newPara.style.color = 'red';
+//     newPara.textContent = 'Hey I\'m red!'
+//     container.appendChild(newPara);
 
-const newHeading = document.createElement('h3');
-    newHeading.style.color = 'blue';
-    newHeading.textContent = 'I\m a blue h3!'
-    container.appendChild(newHeading);
+// const newHeading = document.createElement('h3');
+//     newHeading.style.color = 'blue';
+//     newHeading.textContent = 'I\m a blue h3!'
+//     container.appendChild(newHeading);
 
-const newDiv = document.createElement('div');
-    newDiv.setAttribute('id', 'theDiv');
-    newDiv.style.cssText = 'border: 2px; border-color: black; background-color: pink;'
+// const newDiv = document.createElement('div');
+//     newDiv.setAttribute('id', 'theDiv');
+//     newDiv.style.cssText = 'border: 2px; border-color: black; background-color: pink;'
 
-const childHeading = document.createElement('h1');
-    childHeading.textContent = 'I\'m in a div';
-    newDiv.appendChild(childHeading);
+// const childHeading = document.createElement('h1');
+//     childHeading.textContent = 'I\'m in a div';
+//     newDiv.appendChild(childHeading);
     
-const childPara = document.createElement('p');
-    childPara.textContent = 'ME TOO!'
-    newDiv.appendChild(childPara);
+// const childPara = document.createElement('p');
+//     childPara.textContent = 'ME TOO!'
+//     newDiv.appendChild(childPara);
 
-    container.appendChild(newDiv);
+//     container.appendChild(newDiv);
 
 
 
