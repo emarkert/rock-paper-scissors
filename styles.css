@@ -1,0 +1,18 @@
+.body {
+    background-image: linear-gradient(#ff8a00, #e52e71);
+}
+
+.container {
+
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons-wrapper, .results {
+    margin: 1rem 0;
+}
