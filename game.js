@@ -49,12 +49,12 @@ function playRound(playerSelection) {
 
 function game() {
 
-    for (let i = 0; i < 5; i++) {
-        let playerSelection =  prompt("Choose your play: Rock, Paper, or Scissors?");
-        playRound(playerSelection);
-        console.log(`Current player score: ${playerScore}`);
-        console.log(`Current computer score ${computerScore}`);
-    }
+    // for (let i = 0; i < 5; i++) {
+    //     let playerSelection =  prompt("Choose your play: Rock, Paper, or Scissors?");
+    //     playRound(playerSelection);
+    //     console.log(`Current player score: ${playerScore}`);
+    //     console.log(`Current computer score ${computerScore}`);
+    // }
     if (playerScore >= computerScore) {
         return "Winner Winner! Chicken dinner!"
     } else {
@@ -62,6 +62,22 @@ function game() {
     }
 };
 
+//button variables and their event listeners for playerSelection
 const rockButton = document.querySelector('#rock');
+rockButton.addEventListener('click', () => {
+    playRound("ROCK");
+})
+
 const scissorsButton = document.querySelector('#scissors');
+scissorsButton.addEventListener('click', () => {
+    playRound("SCISSORS");
+})
+
 const paperButton = document.querySelector('#paper');
+paperButton.addEventListener('click', () => {
+    playRound("PAPER");
+})
+
+const resultsContainer = document.querySelector('.results');
+
+// TO DO - SET RESULTS CONTAINER CONTENT TO THE RESULTS OF THE PLAYROUND FN
