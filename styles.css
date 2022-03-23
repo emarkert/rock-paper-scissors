@@ -1,9 +1,85 @@
-.body {
-    background-image: linear-gradient(#ff8a00, #e52e71);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.container {
+body {
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2ed9ff;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.75rem;
+    color: #9dd8eb;
+    margin: 1rem 0;
 }
 
 .game-wrapper {
@@ -11,8 +87,39 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 8px 12px 25px rgba(44, 83, 100, 0.55)  ; 
+	-webkit-box-shadow: 8px 12px 25px rgba(44, 83, 100, 0.55)  ; 
+	-moz-box-shadow: 8px 12px 25px rgba(44, 83, 100, 0.55)  ;
+
+    width: 640px;
+    height: 320px;
+    border-radius: 24px;
+    padding: 3rem;
 }
 
 .buttons-wrapper, .results {
     margin: 1rem 0;
+}
+
+.results {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #9dd8eb;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    background-color: #2ed9ff;
+    border: none;
+    border-radius: 16px;
+    padding: .5rem 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
 }
