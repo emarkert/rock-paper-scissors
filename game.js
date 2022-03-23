@@ -45,6 +45,10 @@ function playRound(playerSelection) {
     } else {
         resultsContainer.textContent = "Draw! Try again!";
     };
+
+    playerScoreboard.textContent = `${playerScore}`;
+    computerScoreboard.textContent = `${computerScore}`
+
 };
 
 function game() {
@@ -80,4 +84,7 @@ paperButton.addEventListener('click', () => {
 
 const resultsContainer = document.querySelector('.results');
 
-// TO DO - SET RESULTS CONTAINER CONTENT TO THE RESULTS OF THE PLAYROUND FN
+const playerScoreboard = document.querySelector('.player-score');
+
+const computerScoreboard = document.querySelector('.computer-score');
+
