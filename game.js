@@ -1,6 +1,31 @@
  //setting up score counters
-    let playerScore = 0;
-    let computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
+
+//DOM selectors
+const resultsContainer = document.querySelector('.results');
+
+const playerScoreboard = document.querySelector('.player-score');
+
+const computerScoreboard = document.querySelector('.computer-score');
+
+
+//button variables and their event listeners for playerSelection
+const rockButton = document.querySelector('#rock');
+rockButton.addEventListener('click', () => {
+    playRound("ROCK");
+});
+
+const scissorsButton = document.querySelector('#scissors');
+scissorsButton.addEventListener('click', () => {
+    playRound("SCISSORS");
+});
+
+const paperButton = document.querySelector('#paper');
+paperButton.addEventListener('click', () => {
+    playRound("PAPER");
+});
+
 
 
 //returns random string of 'Rock', 'Paper', 'Scissors'
@@ -58,43 +83,5 @@ function findWinner() {
         resultsContainer.textContent = "Winner Winner Chicken Dinner!";
     } else if (computerScore === 5 && playerScore < 5) {
         resultsContainer.textContent = "Computer Wins. Better luck next time.";
-    }
-}
-
-function game() {
-
-    // for (let i = 0; i < 5; i++) {
-    //     let playerSelection =  prompt("Choose your play: Rock, Paper, or Scissors?");
-    //     playRound(playerSelection);
-    //     console.log(`Current player score: ${playerScore}`);
-    //     console.log(`Current computer score ${computerScore}`);
-    // }
-    if (playerScore >= computerScore) {
-        console.log("Winner Winner! Chicken dinner!");
-    } else {
-        console.log("Computer wins. Better luck next time!");
-    }
+    };
 };
-
-//button variables and their event listeners for playerSelection
-const rockButton = document.querySelector('#rock');
-rockButton.addEventListener('click', () => {
-    playRound("ROCK");
-})
-
-const scissorsButton = document.querySelector('#scissors');
-scissorsButton.addEventListener('click', () => {
-    playRound("SCISSORS");
-})
-
-const paperButton = document.querySelector('#paper');
-paperButton.addEventListener('click', () => {
-    playRound("PAPER");
-})
-
-const resultsContainer = document.querySelector('.results');
-
-const playerScoreboard = document.querySelector('.player-score');
-
-const computerScoreboard = document.querySelector('.computer-score');
-
