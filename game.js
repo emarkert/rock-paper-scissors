@@ -26,24 +26,24 @@ function playRound(playerSelection) {
     //compare computer and player selections with if/else statements
     if (playerMove == 'ROCK' && computerSelection == 'PAPER') {
         computerScore++;
-        console.log(`Computer wins!`)
+        resultsContainer.textContent = `Computer wins!`
     } else if (playerMove == 'ROCK' && computerSelection == 'SCISSORS') {
         playerScore++;
-        console.log(`Player wins!`)
+        resultsContainer.textContent = `Player wins!`
     } else if (playerMove == 'PAPER' && computerSelection == 'SCISSORS') {
         computerScore++;
-        console.log(`Computer wins!`)
+        resultsContainer.textContent = `Computer wins!`
     } else if (playerMove == 'PAPER' && computerSelection == 'ROCK') {
         playerScore++
-        console.log(`Player wins!`)
+        resultsContainer.textContent = `Player wins!`
     } else if (playerMove == 'SCISSORS' && computerSelection == 'ROCK') {
         computerScore++;
-        console.log(`Computer wins!`)
+        resultsContainer.textContent = `Computer wins!`
     } else if (playerMove == 'SCISSORS' && computerSelection == 'PAPER') {
         playerScore++
-        console.log(`Player wins!`)
+        resultsContainer.textContent = `Player wins!`
     } else {
-        console.log("Draw! Try again!");
+        resultsContainer.textContent = "Draw! Try again!";
     };
 };
 

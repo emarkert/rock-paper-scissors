@@ -107,6 +107,7 @@ h2 {
 .results {
     font-family: 'Space Grotesk', sans-serif;
     color: #9dd8eb;
+    margin: 2rem 0;
 }
 
 .buttons-wrapper {
