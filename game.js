@@ -5,18 +5,19 @@
 
 //returns random string of 'Rock', 'Paper', 'Scissors'
 function computerPlay() { 
-    //set up available options
+
     const options = ['Rock', 'Paper', 'Scissors'];
 
     //get random index value from array
     const randomIndex = Math.floor(Math.random() * options.length);
 
-    //return random strig from array
+    //return random string from array
     const selection = options[randomIndex];
     return selection;
 };
 
 function playRound(playerSelection) {
+
     //retrieve the computer's play
     let computerSelection = computerPlay().toUpperCase();
 
@@ -48,8 +49,17 @@ function playRound(playerSelection) {
 
     playerScoreboard.textContent = `${playerScore}`;
     computerScoreboard.textContent = `${computerScore}`
+    findWinner();
 
 };
+
+function findWinner() {
+    if (playerScore === 5 && computerScore < 5) {
+        resultsContainer.textContent = "Winner Winner Chicken Dinner!";
+    } else if (computerScore === 5 && playerScore < 5) {
+        resultsContainer.textContent = "Computer Wins. Better luck next time.";
+    }
+}
 
 function game() {
 
@@ -60,9 +70,9 @@ function game() {
     //     console.log(`Current computer score ${computerScore}`);
     // }
     if (playerScore >= computerScore) {
-        return "Winner Winner! Chicken dinner!"
+        console.log("Winner Winner! Chicken dinner!");
     } else {
-        return "Computer wins. Better luck next time!"
+        console.log("Computer wins. Better luck next time!");
     }
 };
 
